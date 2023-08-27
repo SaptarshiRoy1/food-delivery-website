@@ -1,0 +1,348 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height:60px;
+}
+
+html{
+    scroll-behavior: smooth;     /*smooth scrolling*/
+}
+
+/* Navigation Bar-------------------------- */
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 1;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+}
+#navbar #logo{
+    margin: 4px 15px;
+    text-align: center;
+}
+
+#navbar #logo p{
+    font-size: 1.4rem;
+    font-family: 'Great Vibes', cursive;
+    color: #ffff;
+    text-shadow: 2px 3px 2.6px red;
+}
+
+#navbar #logo img{
+    height: 105px;
+    width: 105px;
+}
+
+#navbar #middle{
+    /* border: 2px solid green; */
+    display: flex;
+    width: 1212px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Genos', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 13px;
+}
+#navbar ul li a{
+    font-size: 1.6rem;
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+/* navbar sale----------------------------- */
+#navbar #sale{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:2.5%;
+    right: 2%;
+    z-index: 2;
+    border-radius: 10px;
+    animation-name: bijli;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition:all .4s;
+}
+
+#navbar #sale:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    right: 4%;
+    top: 10%;
+}
+
+#navbar #sale:active{
+    color: azure;
+}
+
+#navbar #sale img{
+    height: 120px;
+    width: 125px;
+    margin-top: -20px;
+}
+
+#navbar #sale p{
+    margin-top: -20%;
+    text-align: center;
+    font-size: 143%;
+    font-family: 'Dancing Script', cursive;
+}
+
+@keyframes bijli{
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+/* Home section----------------------------- */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 232px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 138px;
+}
+
+#home::before{
+    content: "";
+    background: url(../img/bg1.jpg) no-repeat center center/cover;
+    opacity: .86;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 72%;
+    width: 100%;
+    background-position-y: -216px;
+}
+
+#home .head1{
+    text-align: center;
+    color: white;
+    font-size: 2.8rem;
+    padding: 10px;
+    margin-top: 140px;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+#home p{
+    font-size: 1.6rem;
+    font-family: 'Dancing Script', cursive;
+    /* font-family: 'Sorts Mill Goudy', serif; */
+    color: aliceblue;
+}
+
+
+/* Services section----------------------- */
+#services-container{
+    /* border: 2px solid; */
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22px;
+}
+
+#services-container::before{
+    content: "";
+    background: url(../img/pancakes-2020863.jpg)no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 51.5%;
+    z-index: -1;
+    opacity: .4;
+    background-position-y: -368px
+}
+
+#container{
+    /* border: 2px solid red; */
+    margin:10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.box{
+    /* border: 2px solid lawngreen; */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    height: 280px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 28px;
+    background-color: rgba(249, 233, 233, 0.589);
+    transition:all 1s;
+    padding-right: 5px;
+}
+
+.box:hover{
+    background-color:rgb(249, 233, 233) ;
+    cursor: pointer;
+    transform: scale(1.21);
+}
+
+section div div img{
+    height: 111px;
+    width: 166px;
+}
+section div div p{
+    font-family: 'Genos', sans-serif;
+}
+
+/* Client Section------------------------------- */
+#client::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg4.webp) ;
+    z-index: -1;
+    opacity: .1;
+    height: 40%;
+    width: 100%;
+    background-position-y: -165px;
+    padding-top: 20px;
+}
+#client{
+    padding-top: 10px;
+}
+#client h1{
+    padding-top: 16px;
+}
+
+.clientdiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.clientimg{
+    height: 200px;
+    width: 220px;
+}
+
+/* Contact Section----------------------------- */
+#contact{
+    position: relative;
+    margin-top: 45px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/contact-us-2993000.jpg) no-repeat center center/cover;
+    height: 122%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 32%;
+}
+.form-group input,textarea{
+    padding: 7px;
+    border-radius: 8px;
+}
+.form-group label{
+    font-size: 1.2rem;
+}
+
+
+/* follow section----------------------------- */
+.followcontainer{
+    display: flex;
+    justify-content: center;
+}
+.followbox{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin: 1px 50px;
+}
+.followcontainer img{
+    height: 33px;
+    width: 33px;
+}
+
+/* footer--------------------------------- */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+.footer a{
+    /* text-decoration:none ; */
+    color:rgb(5, 5, 203);
+}
+
+/* Utility Class--------------------------- */
+.center{
+    text-align: center;
+}
+
+.headprimary{
+    font-size: 2.8rem;
+    font-family: 'Genos', sans-serif;
+}
+
+.headsecondary{
+    font-size: 2rem;
+    font-family: 'Genos', sans-serif;
+}
+
+.btn{
+    padding: 3px 10px;
+    border: 3px solid white;
+    background-color: #540707ba;
+    color: white;
+    margin: 10px;
+    font-size: 1.45rem;
+    border-radius: 13px;
+    font-family: 'Genos', sans-serif;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

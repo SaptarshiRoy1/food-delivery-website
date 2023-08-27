@@ -1,0 +1,86 @@
+/* navigation section---------- */
+#navbar{
+flex-direction: column;
+}
+#navbar #middle{
+    width: 100%;
+}
+#navbar ul li a{
+    font-size: inherit;
+    display: contents;
+}
+
+/* sale------- */
+#navbar #sale{
+    top:2%;
+    right: 2%;
+}
+#navbar #sale:hover{
+    right: 4%;
+}
+
+/* home section---------- */
+
+#home {
+height: 470px;
+padding: 23px;
+}
+#home::before {
+    height: 215%;
+    background-position-y: 100%;
+}
+#home .head1{
+    margin-top: -78px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* services section */
+
+#container{
+flex-direction: column;
+}
+#services-container{
+    margin-top: 2px;
+}
+
+/* client section */
+.clientdiv{
+    flex-wrap: wrap;
+}
+
+.clientimg{
+    height: 80px;
+    width: 86px;
+}
+
+#client::before{
+    height: 23%;
+}
+
+
+/* follow section---------- */
+.followbox{
+    margin: 0px;
+    
+}
+.followcontainer img {
+    height: 12px;
+    width: 12px;
+}
+section div div p {
+   font-size: 10px;
+}
+/* footer section---------- */
+.footer{
+    padding: 1px;
+    font-size: 20px;
+}
+
+/* utilitu classes--------- */
+.headprimary{
+    font-size:  26px;
+}
+/* .headsecondary{} */
